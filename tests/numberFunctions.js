@@ -1,10 +1,10 @@
 const each = require('jest-each').default;
 
-const getLargest = require("../getLargest");
+const getLargest = require("../numberFunctions");
 
-describe("getLargest", () => {
+describe("numberFunctions", () => {
 
-    test("getLargest is a function", () => {
+    test("getLargest is a funcnpm run testtion", () => {
         expect(typeof getLargest).toBe("function");
     })
     
