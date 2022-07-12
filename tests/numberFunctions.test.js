@@ -29,6 +29,17 @@ describe("getSmallest", () => {
         expect(typeof getSmallest).toBe("function");
     })
     
+   describe("It reports invalid inputs correctly", () => {
+
+        test("It throws an error if one of the three inputs is undefined", () => {
+
+            expect(() => {
+                getSmallest(1,2)
+            }).toThrow("Error: all inputs must have a value")
+
+   }) 
+})
+
    describe("It handles normal inputs successfully", () => {
 
         each([
